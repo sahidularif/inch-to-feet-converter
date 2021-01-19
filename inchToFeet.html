@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inch2Feet- Calculator</title>
+</head>
+<body>
+    <fieldset style="width: 60%; margin: 50px auto;">
+        <legend><strong>Inch To Feet Converter</strong></legend>
+      
+       
+   
+    <h1 id="result"><strong></strong></h1>
+    <button onclick="inchToFeet()">Try calculate....</button>
+      
+        
+    </fieldset>
+    <script>
+        function inchToFeet(){
+            var inch = prompt("Input your inche's")
+            if (inch != null){
+                var feet = inch/12;
+                document.getElementById("result").innerText = 'Your result is ' + feet + ' feet';
+               
+            }                    
+        }
+
+    </script>
+</body>
+</html>
